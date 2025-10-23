@@ -1,6 +1,6 @@
 import utils
 
-def main():
+def encrypt():
     SYMBOLS = utils.SYMBOLS
     plain_text = utils.plain_text
     cipher_text = ""
@@ -16,4 +16,4 @@ def main():
     return cipher_text
 
 if __name__ == "__main__":
-    print(main())
+    print(encrypt())
