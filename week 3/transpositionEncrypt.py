@@ -3,7 +3,7 @@ import random
 plain_text = "I love abbas, but abbas doesn't love me"
 key = 4
 cipher_text = ""
-row = len(plain_text) // key 
+row = len(plain_text) // key + 1
 
 def encrypt():
     global cipher_text
