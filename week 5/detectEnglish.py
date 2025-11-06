@@ -24,7 +24,6 @@ def is_english(message, word_percentage = 20, letter_percentage = 80):
     return (detect_english(message) >= word_percentage) and ((len(clean_message) / len(message))* 100) >= letter_percentage
 def main():
     message = "this is an sentence written in english language by terminator66!!!!!!!!!"
-    print("english" if is_english(message) else "no")
-
+    return is_english(message)
 if __name__ == "__main__":
     main()
