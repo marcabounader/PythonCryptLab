@@ -9,10 +9,7 @@ def generateRandomKeys(length_symbol):
     keyA = random.randint(2,length_symbol-1)
     try: 
         keyA_inverse = euclideans.modular_multiplicative_inverse(keyA, length_symbol)
-        if keyA_inverse == None or keyA == None:
-            generateRandomKeys(length_symbol)
-        else:
-            return keyA, keyA_inverse
+        return keyA, keyA_inverse
             
     except Exception as e:
         print(f"This is the error: {e} with key {keyA}")

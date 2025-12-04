@@ -21,7 +21,7 @@ def modular_multiplicative_inverse(a, m):
     gcd, x, y = extended_gcd(a, m)
 
     if gcd != 1:
-        raise None
+        return None
     else:
         # Ensure the inverse is positive
         return x % m
