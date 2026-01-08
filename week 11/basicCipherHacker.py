@@ -62,6 +62,7 @@ rzAGK aqqmP It Ikc oclAjAvupc pcYKcl IcikGtptKe tj uptiyikvAG. bcileOIAGK v Tczz
         if wordPattern not in allPatterns:
             continue
         for candidates in allPatterns[wordPattern]:
+            print(wordPattern,candidates)
             addLettersToMapping(general_mapping, clean_word , candidates)
     removeSolvedLetter(general_mapping)
     decrypted_list = decryptWithMapping(general_mapping,message)
